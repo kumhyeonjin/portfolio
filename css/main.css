@@ -289,8 +289,26 @@ body {
   font-weight: 600;
 }
 .about_right {
-  border: 1px solid blue;
   width: 65%;
+  font-family: var(--mainBoxContent);
+  font-size: 14px;
+  border-left: 0.5px dotted #5a5a5a;
+}
+.about_right p {
+  /* border: 1px solid red; */
+  padding: 5%;
+  line-height: 1.5;
+  margin-bottom: 15%;
+}
+.about_right p span {
+  font-weight: bold;
+}
+.about_right a {
+  color: #5a5a5a;
+  transition: 0.2s;
+}
+.about_right a:hover {
+  color: #ca4de9;
 }
 .about_content .about_left .me {
   width: 100px;
