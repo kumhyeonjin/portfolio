@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CODE PLAYER</title>
+    <link rel="stylesheet" href="./css/my_reset.css" />
+    <!-- 폰트어썸 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- 구글폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&family=IBM+Plex+Mono:wght@100;500;600&family=Lexend:wght@300;400;500;600&family=Montserrat:ital,wght@0,800;1,700&family=Rajdhani:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/common.js" defer></script>
+    <!-- <script src="./js/drag.js" defer></script> -->
+  </head>
+  <body>
+    <div class="wrap">
+      <h1 class="mainTitle">
+        <span>CODE</span>
+        <span class="pointColor">PLAYER</span>
+      </h1>
+
+      <div class="display mw">
+        <div class="display_Top"></div>
+        <div class="project">
+          <img src="./image/pj_Icon.png" alt="pj_Icon" class="pj_Icon" />
+          <div class="pj_list">
+            <button class="modal_open daejeon">
+              <img src="./image/pj_list_icon.png" alt="pj_list_icon" />
+              <p>대전시민천문대</p>
+            </button>
+          </div>
+          <div class="pj_list">
+            <button class="modal_open newneek">
+              <img src="./image/pj_list_icon.png" alt="pj_list_icon" />
+              <p>NEWNEEK</p>
+            </button>
+          </div>
+          <div class="pj_list">
+            <button class="modal_open map">
+              <img src="./image/pj_list_icon.png" alt="pj_list_icon" />
+              <p>MAP'sMART</p>
+            </button>
+          </div>
+          <div class="pj_list">
+            <button class="modal_open tour">
+              <img src="./image/pj_list_icon.png" alt="pj_list_icon" />
+              <p>TourGuide</p>
+            </button>
+          </div>
+          <div class="pj_list">
+            <button class="modal_open ilhwa">
+              <img src="./image/pj_list_icon.png" alt="pj_list_icon" />
+              <p>ILHWA</p>
+            </button>
+          </div>
+        </div>
+        <!-- skill -->
+        <div class="skillBox box">
+          <h2>USABLE SKILL</h2>
+          <div class="skill_content content">
+            <!-- tabBtn -->
+            <div class="skill_img">
+              <img
+                src="./image/html5.png"
+                alt="html"
+                class="tabImg tab1 active"
+              />
+              <img src="./image/css3.png" alt="css" class="tabImg tab2" />
+              <img src="./image/js.png" alt="js" class="tabImg tab3" />
+              <img src="./image/react.png" alt="react" class="tabImg tab4" />
+              <img src="./image/figma.png" alt="figma" class="tabImg tab5" />
+              <!-- tabcontent -->
+              <div class="description">
+                <p class="descList tab1">
+                  <span>시맨틱 마크업</span>
+                  을 통해 올바른 태그 사용, <span>웹 접근성을 고려</span> 하여
+                  작업합니다.
+                </p>
+                <p class="descList tab2">
+                  선택한 요소에 스타일을 지정하여<span>
+                    웹페이지의 레이아웃을 디자인</span
+                  >
+                  합니다.
+                </p>
+                <p class="descList tab3">
+                  웹페이지의 요소를 조작하고 이벤트를 처리하여
+                  <span>동적인 기능을 구현</span> 하여<span
+                    >웹/앱 사용자와 상호작용</span
+                  >
+                  할 수 있도록 합니다.
+                </p>
+                <p class="descList tab4">
+                  JSX라는 자바스크립트와 HTML을 결합한 문법을 사용하여
+                  <span
+                    >컴포넌트를 작성하고 웹 애플리케이션을 빠르고 효율적으로
+                    구축</span
+                  >
+                  합니다.
+                </p>
+                <p class="descList tab5">
+                  다양한 도구와 기능을 활용하여<span
+                    >다양한 디자인 요소를 구성</span
+                  >
+                  하고 프로토타입을 작성합니다.<span
+                    >팀원들과의 원활한 협업이 가능</span
+                  >
+                  하고 시각적인 디자인 작업을 효율적으로 수행합니다.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="eduBox box">
+          <h2>EDUCATION</h2>
+          <div class="edu_content content">
+            <p>
+              그린컴퓨터아트학원<br />
+              <span>리엑트(React)</span>, 리액트네이티브<span>
+                EXPO 활용 프론트앤드 개발자 양성과정 </span
+              ><br /><br />
+              <span>기간:</span> 2022.12.19 ~ 2023.06.27
+            </p>
+          </div>
+        </div>
+        <div class="contactBox box">
+          <h2>CONTACT</h2>
+          <div class="contact_con content">
+            <p>
+              <i class="fa-regular fa-user"></i>
+              금현진
+            </p>
+            <p>
+              <i class="fa-regular fa-envelope"></i>
+              <a href="mailto:jinieguk97@gmail.com">jinieguk97@gmail.com</a>
+            </p>
+          </div>
+        </div>
+        <div class="aboutBox box">
+          <h2>ABOUT ME</h2>
+          <div class="about_content content">
+            <article class="about_left">
+              <img src="./image/me.png" alt="me" class="me" />
+              <p><span>NAME:</span> 금현진</p>
+              <p><span>AGE:</span>1997.04.12(26)</p>
+            </article>
+            <article class="about_right">
+              <p>
+                자기소개 자기소개
+                <a
+                  href="https://drive.google.com/file/d/1fiYSf4Xtz6lTq8OKTBX01OtyER-4I415/view?usp=sharing"
+                >
+                  이력서&자기소개서 다운받기</a
+                >
+              </p>
+            </article>
+          </div>
+        </div>
+      </div>
+
+      <div class="play">
+        <div class="code">
+          <img src="./image/code1.png" alt="code1" class="codeList" />
+          <img src="./image/code2.png" alt="code2" class="codeList" />
+          <img src="./image/code3.png" alt="code3" class="codeList" />
+          <img src="./image/code4.png" alt="code4" class="codeList" />
+          <img src="./image/code5.png" alt="code5" class="codeList" />
+        </div>
+        <div class="hands">
+          <img src="./image/hand_L.png" alt="hand_L" class="hand_L" />
+          <img src="./image/hand_R.png" alt="hand_R" class="hand_R" />
+        </div>
+        <img src="./image/tset3.gif" alt="piano" class="piano" />
+      </div>
+
+      <section class="modal_contain">
+        <div class="daejeon_modal">
+          <div class="modalcontent">
+            <section class="detail_L">
+              <div class="leftCon">
+                <div class="date">
+                  <p>2023. 02. 24 - 2023. 03. 17</p>
+                  <hr />
+                </div>
+                <h1>대전시민천문대</h1>
+                <div class="pj_decs">
+                  <p>
+                    기존 웹사이트인 대전시민천문대(https://djstar.kr)를
+                    <span>반응형 웹</span> 사이트로 리뉴얼 하였습니다. 사용자를
+                    고려하여 사이트 주요 메뉴를 메인페이지에 배치시켰습니다.
+                    또한, ‘천문대’의 이미지를 시각적으로 표현하기 위해 디자인
+                    컨셉을 ‘우주’, ‘밤하늘’로 새롭게 설정하였고
+                    <span>HTML, CSS, JavaScript</span> 를 활용하여 구현했습니다.
+                  </p>
+                </div>
+                <a href="#" class="more">
+                  <button class="moreView_btn">MOREVIEW</button>
+                </a>
+              </div>
+            </section>
+            <section class="detail_R">
+              <button class="modal_close">
+                <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+              </button>
+              <div class="mockup">
+                <img src="./image/daejeon.png" alt="daejeon" />
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="newneek_modal">
+          <div class="modalcontent">
+            <section class="detail_L">
+              <div class="leftCon">
+                <div class="date">
+                  <p>2023. 02. 01 - 2023. 02. 17</p>
+                  <hr />
+                </div>
+                <h1>NEWNEEK</h1>
+                <div class="pj_decs">
+                  <p>
+                    기존 웹사이트 뉴닉(https://newneek.co)을
+                    <span> 반응형 웹</span>사이트로 리뉴얼 하였습니다. 사용자의
+                    입장에서 사이트를 분석 후 기존 사이트 내 메인카피, 컨셉을
+                    발전시켜 다양한 포인트 컬러를 사용하여 새로 디자인
+                    하였습니다. 뉴닉은 ‘뉴스 정보 전달’의 목적을 가지고 있으므로
+                    다양한 정보를 메인페이지에 섹션별로 보다 알기 쉽게 배치
+                    하고자 했습니다.
+                    <span>HTML, CSS, JavaScript를 활용</span>하여 구현했습니다.
+                  </p>
+                </div>
+                <a
+                  href="https://github.com/kumhyeonjin/Project_NEWNEEK_renewal"
+                  class="more"
+                >
+                  <button class="moreView_btn">MOREVIEW</button>
+                </a>
+              </div>
+            </section>
+            <section class="detail_R">
+              <button class="modal_close">
+                <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+              </button>
+              <div class="mockup">
+                <img src="./image/newneek.png" alt="mapsmart" />
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="map_modal">
+          <div class="modalcontent">
+            <section class="detail_L">
+              <div class="leftCon">
+                <div class="date">
+                  <p>2023. 04. 10 - 2023. 04. 28</p>
+                  <hr />
+                </div>
+                <h1>MAP's <br />MART</h1>
+                <div class="pj_decs">
+                  <p>
+                    <span>React</span>를 기반으로 대전 문화관광 관련
+                    <span>
+                      api(관광지, 모범음식점, 쇼핑,숙박정보 데이터)를 활용 </span
+                    >하여 대전을 처음 방문하는 관광객,대전시민들에게 대전 내
+                    위치를 기반하여 식당,관광지,쇼핑,숙박업소 등의 정보를
+                    제공하는 웹서비스를 제작하였습니다.
+                  </p>
+                </div>
+                <a href="#" class="more">
+                  <button class="moreView_btn">MOREVIEW</button>
+                </a>
+              </div>
+            </section>
+            <section class="detail_R">
+              <button class="modal_close">
+                <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+              </button>
+              <div class="mockup">
+                <img src="./image/mapsmart.png" alt="mapsmart" />
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="tour_modal">
+          <div class="modalcontent">
+            <section class="detail_L">
+              <div class="leftCon">
+                <div class="date">
+                  <p>2023. 02. 01 - 2023. 02. 17</p>
+                  <hr />
+                </div>
+                <h1>TourGuide</h1>
+                <div class="pj_decs">
+                  <p><span> Chat GPT</span>를 활용한 여행가이드 앱 개발</p>
+                </div>
+                <a href="#" class="more">
+                  <button class="moreView_btn">MOREVIEW</button>
+                </a>
+              </div>
+            </section>
+            <section class="detail_R">
+              <button class="modal_close">
+                <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+              </button>
+              <div class="mockup">
+                <img src="./image/tourMockup.png" alt="TourGuide" />
+              </div>
+            </section>
+          </div>
+        </div>
+
+        <div class="ilhwa_modal">
+          <div class="modalcontent">
+            <section class="detail_L">
+              <div class="leftCon">
+                <div class="date">
+                  <p>2023. 02. 01 - 2023. 02. 17</p>
+                  <hr />
+                </div>
+                <h1>TourGuide</h1>
+                <div class="pj_decs">
+                  <p><span> Chat GPT</span>를 활용한 여행가이드 앱 개발</p>
+                </div>
+                <a href="#" class="more">
+                  <button class="moreView_btn">MOREVIEW</button>
+                </a>
+              </div>
+            </section>
+            <section class="detail_R">
+              <button class="modal_close">
+                <i class="fa-sharp fa-solid fa-circle-xmark"></i>
+              </button>
+              <div class="mockup">
+                <img src="./image/tourMockup.png" alt="TourGuide" />
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
