@@ -276,7 +276,6 @@ body {
   justify-content: space-around;
 }
 .about_left {
-  border: 1px solid red;
   width: 30%;
 }
 .about_left p {
