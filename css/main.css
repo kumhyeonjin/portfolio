@@ -242,7 +242,6 @@ body {
   font-family: var(--mainBoxContent);
   font-weight: 500;
   font-size: 12px;
-  /* padding: 0.25rem; */
 }
 .edu_content p span {
   font-weight: bold;
