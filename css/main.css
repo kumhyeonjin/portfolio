@@ -173,7 +173,7 @@ body {
 }
 
 .skill_content {
-  height: 180px;
+  height: 200px;
 }
 .skill_img {
   display: flex;
@@ -242,6 +242,7 @@ body {
   font-family: var(--mainBoxContent);
   font-weight: 500;
   font-size: 12px;
+  /* padding: 0.25rem; */
 }
 .edu_content p span {
   font-weight: bold;
@@ -275,12 +276,19 @@ body {
   justify-content: space-around;
 }
 .about_left {
-  width: 30%;
+  /* border: 1px solid red; */
+  width: 40%;
+  /* text-align: justify; */
+  /* padding: 1rem; */
+}
+.about_left .me {
+  margin-top: 1rem;
 }
 .about_left p {
   font-family: var(--mainBoxContent);
   font-size: 12px;
   margin-bottom: 10%;
+  white-space: normal;
 }
 
 .about_left p span {
@@ -322,7 +330,6 @@ body {
   color: #e57bff;
 }
 .play {
-  /* border: 1px solid red; */
   height: 310px;
   display: flex;
   flex-direction: column;
@@ -333,16 +340,17 @@ align-items: center;
 justify-content: center; */
   position: relative;
   overflow: hidden;
+  width: 100%;
 }
 
 .play .piano {
-  width: 1000px;
+  width: 50%;
   position: absolute;
   bottom: -3%;
 }
 
 .play .hands {
-  width: 700px;
+  width: 30%;
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -360,7 +368,6 @@ justify-content: center; */
 @keyframes horizontalAni_L {
   0% {
     transform: translateX(100%);
-    opacity: 0.7;
   }
 
   60% {
@@ -375,7 +382,6 @@ justify-content: center; */
 @keyframes horizontalAni_R {
   0% {
     transform: translateX(100%);
-    opacity: 0.7;
   }
   50% {
     transform: translateX(0);
@@ -387,10 +393,6 @@ justify-content: center; */
   }
 }
 /* codeAni */
-
-/* .codeList.hidden {
-  opacity: 0;
-} */
 
 .codeList:nth-of-type(1) {
   animation: riseAnimation1 4s linear infinite;
@@ -494,7 +496,47 @@ justify-content: center; */
     opacity: 0;
   }
 }
+@media (max-width: 1100px) {
+  .display {
+    width: 80%;
 
+    height: 80vh;
+  }
+  .display .project {
+    width: 85%;
+  }
+  .display .skillBox {
+    width: 40%;
+    left: 3%;
+    top: 40%;
+  }
+  .display .eduBox {
+    width: 40%;
+    left: 3%;
+    top: 80%;
+  }
+  .display .aboutBox {
+    width: 50%;
+    left: 47%;
+    top: 40%;
+  }
+  .display .aboutBox p {
+    white-space: normal;
+  }
+  .display .contactBox {
+    width: 50%;
+    left: 47%;
+    top: 85%;
+  }
+  .play {
+    height: auto;
+  }
+  .play .code img,
+  .play .hands img,
+  .play .piano {
+    display: none;
+  }
+}
 /* ---------- */
 /* modal */
 
@@ -521,7 +563,8 @@ justify-content: center; */
 .daejeon_modal.on,
 .map_modal.on,
 .newneek_modal.on,
-.tour_modal.on {
+.tour_modal.on,
+.ilhwa_modal.on {
   opacity: 1;
   z-index: 20;
 }
@@ -568,6 +611,7 @@ justify-content: center; */
   font-family: var(--pjName_800);
   font-weight: 800;
   font-size: 60px;
+  line-height: 1.5;
 }
 .pj_decs p {
   margin-top: 10%;
@@ -623,11 +667,19 @@ justify-content: center; */
   font-size: 30px;
 }
 
+/*  */
+
+.mockup {
+  width: 80%;
+}
+.mockup img {
+  width: 100%;
+}
+
 /* modal 반응형 */
-@media screen and (max-width: 700px) {
+@media (max-width: 1100px) {
   .detail_L {
-    width: 100%;
-    height: auto;
+    width: 75%;
   }
 
   .leftCon {
@@ -635,29 +687,37 @@ justify-content: center; */
     height: auto;
     margin: 0 10%;
   }
-
+  .leftCon .date {
+    white-space: nowrap;
+    font-size: 16px;
+  }
   .leftCon h1 {
     margin-top: 5%;
-    font-size: 40px;
+    font-size: 30px;
+    white-space: nowrap;
   }
 
   .pj_decs p {
-    margin-top: 5%;
+    margin-top: 15%;
     font-size: 18px;
   }
 
   .more .moreView_btn {
-    margin-top: 5%;
+    margin-top: 15%;
     font-size: 16px;
   }
 
   .detail_R {
     width: 100%;
-    height: auto;
   }
-
+  .detail_R .mockup {
+    width: 100%;
+  }
+  .detail_R .mockup img {
+    width: 100%;
+  }
   .detail_R .modal_close {
-    top: 5%;
+    top: 15%;
     right: 5%;
   }
 }
